@@ -122,7 +122,7 @@ a { color: inherit; }
   color: var(--ivory);
 }
 
-.nav__mark svg { width: 34px; height: 34px; }
+.nav__mark img { width: 34px; height: 34px; object-fit: contain; }
 
 .nav__wordmark {
   font-family: var(--crest-serif);
@@ -323,6 +323,60 @@ a { color: inherit; }
   letter-spacing: 0.01em;
 }
 
+/* ---------- The Room (photo pair) ---------- */
+
+.room__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.room__grid img {
+  width: 100%;
+  height: 62vh;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+/* ---------- Family & Community ---------- */
+
+.family {
+  position: relative;
+  background-size: cover;
+  background-position: center 30%;
+  padding: 160px 32px;
+  text-align: center;
+  color: var(--ivory);
+}
+
+.family__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,31,20,0.75), rgba(10,31,20,0.55) 45%, rgba(10,31,20,0.85));
+}
+
+.family__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.family__inner h2 {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(30px, 4.4vw, 46px);
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.family__inner p {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ivory-dim);
+}
+
 /* ---------- Philanthropy ---------- */
 
 .philanthropy {
@@ -506,4 +560,7 @@ a { color: inherit; }
   .ethos, .experience, .philanthropy, .invite { padding-left: 24px; padding-right: 24px; }
   .philanthropy__logos { gap: 24px; }
   .philanthropy__logo { min-width: 160px; }
+  .room__grid { grid-template-columns: 1fr; }
+  .room__grid img { height: 44vh; min-height: 260px; }
+  .family { padding: 110px 24px; }
 }

@@ -149,7 +149,7 @@ section + section { border-top: 1px solid rgba(20, 23, 15, 0.08); }
 
 /* ---------- Photography ---------- */
 
-.photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
+.photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
 .photo-grid figure { margin: 0; }
 .photo-grid img { border: 1px solid var(--line); aspect-ratio: 4/5; object-fit: cover; }
 .photo-grid figcaption { font-family: var(--sans); font-size: 11px; color: #6b6455; margin-top: 8px; text-align: center; }
