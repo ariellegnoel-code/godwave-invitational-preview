@@ -164,25 +164,20 @@ a { color: inherit; }
   justify-content: center;
   text-align: center;
   color: var(--ivory);
-  background:
-    radial-gradient(ellipse at 50% -10%, rgba(198, 163, 79, 0.14), transparent 55%),
-    linear-gradient(180deg, var(--green-950) 0%, var(--green-900) 45%, var(--green-800) 100%);
+  background-image: url('assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center 30%;
   overflow: hidden;
   padding: 140px 32px 96px;
-}
-
-.hero__field {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  opacity: 0.5;
 }
 
 .hero__vignette {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: radial-gradient(ellipse at 50% 60%, transparent 40%, rgba(10, 31, 20, 0.55) 100%);
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(198, 163, 79, 0.16), transparent 55%),
+    linear-gradient(180deg, rgba(8,28,17,0.86) 0%, rgba(15,43,26,0.62) 42%, rgba(8,28,17,0.9) 100%);
 }
 
 .hero__inner {
