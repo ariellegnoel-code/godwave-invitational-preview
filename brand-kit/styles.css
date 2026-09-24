@@ -60,7 +60,7 @@ section + section { border-top: 1px solid rgba(20, 23, 15, 0.08); }
 .on-dark .eyebrow { color: var(--gold-bright); }
 
 .section-head { max-width: 720px; margin: 0 auto 56px; text-align: center; }
-.section-head h2 { font-family: var(--display); font-style: italic; font-size: clamp(30px, 4vw, 44px); }
+.section-head h2 { font-family: var(--display); font-size: clamp(30px, 4vw, 44px); }
 .section-head p { font-family: var(--sans); font-size: 15px; color: #4a5245; margin-top: 14px; }
 .on-dark .section-head p { color: var(--ivory-dim); }
 
@@ -80,14 +80,13 @@ section + section { border-top: 1px solid rgba(20, 23, 15, 0.08); }
 
 .cover img { width: 132px; margin: 0 auto 30px; }
 .cover .kicker { font-family: var(--sans); font-size: 12px; letter-spacing: 0.35em; color: var(--gold-bright); margin-bottom: 22px; }
-.cover h1 { font-family: var(--display); font-style: italic; font-size: clamp(52px, 9vw, 104px); line-height: 1; }
+.cover h1 { font-family: var(--display); font-size: clamp(52px, 9vw, 104px); line-height: 1; }
 .cover .sub { font-family: var(--sans); font-size: 13px; letter-spacing: 0.14em; color: var(--ivory-dim); margin-top: 26px; }
 
 /* ---------- Essence ---------- */
 
 .essence-quote {
   font-family: var(--display);
-  font-style: italic;
   font-size: clamp(26px, 3.6vw, 38px);
   max-width: 780px;
   margin: 0 auto 28px;
@@ -98,8 +97,8 @@ section + section { border-top: 1px solid rgba(20, 23, 15, 0.08); }
 
 .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); margin-top: 56px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .pillar { background: var(--ivory); padding: 40px 28px; text-align: center; }
-.pillar .num { font-family: var(--display); font-style: italic; font-size: 32px; color: var(--gold); }
-.pillar h3 { font-size: 21px; font-style: italic; margin: 8px 0 10px; color: var(--green-900); }
+.pillar .num { font-family: var(--display); font-size: 32px; color: var(--gold); }
+.pillar h3 { font-size: 21px; margin: 8px 0 10px; color: var(--green-900); }
 .pillar p { font-family: var(--sans); font-size: 13.5px; line-height: 1.7; color: #4a5245; }
 
 /* ---------- Logo system ---------- */
@@ -130,7 +129,7 @@ section + section { border-top: 1px solid rgba(20, 23, 15, 0.08); }
 
 .type-specimen { border: 1px solid var(--line); padding: 44px 40px; margin-bottom: 28px; background: var(--ivory); }
 .type-specimen .label { font-family: var(--sans); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
-.type-specimen .sample-display { font-family: var(--display); font-style: italic; font-size: clamp(34px, 5vw, 58px); color: var(--green-900); line-height: 1.1; }
+.type-specimen .sample-display { font-family: var(--display); font-size: clamp(34px, 5vw, 58px); color: var(--green-900); line-height: 1.1; }
 .type-specimen .sample-sans { font-family: var(--sans); font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--green-800); }
 .type-specimen .meta { font-family: var(--sans); font-size: 13px; color: #4a5245; margin-top: 18px; line-height: 1.7; }
 .type-specimen .candidates { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
@@ -144,7 +143,7 @@ section + section { border-top: 1px solid rgba(20, 23, 15, 0.08); }
 
 .voice-lines { display: grid; gap: 1px; background: var(--line); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 10px; }
 .voice-line { background: var(--green-900); padding: 34px 40px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-.voice-line .text { font-family: var(--display); font-style: italic; font-size: clamp(20px, 2.6vw, 28px); }
+.voice-line .text { font-family: var(--display); font-size: clamp(20px, 2.6vw, 28px); }
 .voice-line .use { font-family: var(--sans); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright); white-space: nowrap; }
 
 /* ---------- Photography ---------- */
@@ -155,7 +154,7 @@ section + section { border-top: 1px solid rgba(20, 23, 15, 0.08); }
 .photo-grid figcaption { font-family: var(--sans); font-size: 11px; color: #6b6455; margin-top: 8px; text-align: center; }
 
 .photo-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 56px; }
-.photo-pillar h4 { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--gold-bright); margin-bottom: 10px; }
+.photo-pillar h4 { font-family: var(--serif); font-size: 22px; color: var(--gold-bright); margin-bottom: 10px; }
 .photo-pillar p { font-family: var(--sans); font-size: 13.5px; line-height: 1.8; color: var(--ivory-dim); }
 
 /* ---------- Philanthropy ---------- */
