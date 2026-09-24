@@ -1,0 +1,188 @@
+/* GodWave Brand Kit v1 — reuses the landing page's own design language */
+
+:root {
+  --green-950: #081c11;
+  --green-900: #0c2718;
+  --green-800: #123420;
+  --ivory: #f4efe4;
+  --ivory-dim: #e9e1cf;
+  --gold: #c6a34f;
+  --gold-bright: #fada2e;
+  --gold-sampled: #ffe82d;
+  --ink: #14170f;
+  --line: rgba(198, 163, 79, 0.35);
+
+  --serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --display: "Fraunces", var(--serif);
+  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+
+  --max: 1180px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.eyebrow {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 18px;
+}
+
+.eyebrow--onlight { color: var(--green-800); }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 500; margin: 0; }
+
+section { padding: 96px 0; }
+section + section { border-top: 1px solid rgba(20, 23, 15, 0.08); }
+.on-dark { background: var(--green-900); color: var(--ivory); }
+.on-dark + .on-dark { border-top: 1px solid var(--line); }
+.on-dark .eyebrow { color: var(--gold-bright); }
+
+.section-head { max-width: 720px; margin: 0 auto 56px; text-align: center; }
+.section-head h2 { font-family: var(--display); font-style: italic; font-size: clamp(30px, 4vw, 44px); }
+.section-head p { font-family: var(--sans); font-size: 15px; color: #4a5245; margin-top: 14px; }
+.on-dark .section-head p { color: var(--ivory-dim); }
+
+/* ---------- Cover ---------- */
+
+.cover {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--ivory);
+  background: radial-gradient(ellipse at 50% -10%, rgba(198, 163, 79, 0.16), transparent 55%),
+    linear-gradient(180deg, var(--green-950), var(--green-800));
+  padding: 100px 32px;
+}
+
+.cover img { width: 132px; margin: 0 auto 30px; }
+.cover .kicker { font-family: var(--sans); font-size: 12px; letter-spacing: 0.35em; color: var(--gold-bright); margin-bottom: 22px; }
+.cover h1 { font-family: var(--display); font-style: italic; font-size: clamp(52px, 9vw, 104px); line-height: 1; }
+.cover .sub { font-family: var(--sans); font-size: 13px; letter-spacing: 0.14em; color: var(--ivory-dim); margin-top: 26px; }
+
+/* ---------- Essence ---------- */
+
+.essence-quote {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(26px, 3.6vw, 38px);
+  max-width: 780px;
+  margin: 0 auto 28px;
+  text-align: center;
+  color: var(--green-900);
+}
+.essence-body { max-width: 640px; margin: 0 auto; text-align: center; color: #3c4438; }
+
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); margin-top: 56px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.pillar { background: var(--ivory); padding: 40px 28px; text-align: center; }
+.pillar .num { font-family: var(--display); font-style: italic; font-size: 32px; color: var(--gold); }
+.pillar h3 { font-size: 21px; font-style: italic; margin: 8px 0 10px; color: var(--green-900); }
+.pillar p { font-family: var(--sans); font-size: 13.5px; line-height: 1.7; color: #4a5245; }
+
+/* ---------- Logo system ---------- */
+
+.logo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch; margin-top: 20px; }
+.logo-card { background: var(--green-950); border: 1px solid var(--line); padding: 48px; display: flex; align-items: center; justify-content: center; }
+.logo-card img { max-height: 220px; width: auto; margin: 0 auto; }
+.logo-card--light { background: var(--ivory-dim); }
+.logo-caption { font-family: var(--sans); font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: #6b6455; text-align: center; margin-top: 14px; }
+
+.rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 56px; }
+.rules-grid h4 { font-family: var(--sans); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--green-800); margin: 0 0 16px; }
+.rules-grid ul { margin: 0; padding-left: 18px; font-family: var(--sans); font-size: 14px; line-height: 1.9; color: #3c4438; }
+.rules-grid .dont li::marker { color: #a33; }
+.rules-grid .do li::marker { color: var(--gold); }
+
+/* ---------- Color palette ---------- */
+
+.swatches { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 20px; }
+.swatch { border: 1px solid var(--line); }
+.swatch__fill { height: 120px; }
+.swatch__meta { padding: 14px 16px; font-family: var(--sans); background: var(--ivory); }
+.swatch__name { font-size: 13px; font-weight: 500; color: var(--ink); }
+.swatch__hex { font-size: 12px; color: #6b6455; margin-top: 2px; letter-spacing: 0.04em; }
+.swatch__note { font-size: 11px; color: #8a8270; margin-top: 6px; line-height: 1.5; }
+
+/* ---------- Typography ---------- */
+
+.type-specimen { border: 1px solid var(--line); padding: 44px 40px; margin-bottom: 28px; background: var(--ivory); }
+.type-specimen .label { font-family: var(--sans); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.type-specimen .sample-display { font-family: var(--display); font-style: italic; font-size: clamp(34px, 5vw, 58px); color: var(--green-900); line-height: 1.1; }
+.type-specimen .sample-sans { font-family: var(--sans); font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--green-800); }
+.type-specimen .meta { font-family: var(--sans); font-size: 13px; color: #4a5245; margin-top: 18px; line-height: 1.7; }
+.type-specimen .candidates { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+.type-specimen .candidates span { font-family: var(--sans); font-size: 11px; letter-spacing: 0.05em; padding: 6px 12px; border: 1px solid var(--line); color: var(--green-800); }
+
+.reference-shot { border: 1px solid var(--line); }
+.reference-shot img { display: block; }
+.reference-caption { font-family: var(--sans); font-size: 11.5px; color: #6b6455; margin-top: 10px; text-align: center; }
+
+/* ---------- Voice ---------- */
+
+.voice-lines { display: grid; gap: 1px; background: var(--line); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 10px; }
+.voice-line { background: var(--green-900); padding: 34px 40px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.voice-line .text { font-family: var(--display); font-style: italic; font-size: clamp(20px, 2.6vw, 28px); }
+.voice-line .use { font-family: var(--sans); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright); white-space: nowrap; }
+
+/* ---------- Photography ---------- */
+
+.photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 20px; }
+.photo-grid figure { margin: 0; }
+.photo-grid img { border: 1px solid var(--line); aspect-ratio: 4/5; object-fit: cover; }
+.photo-grid figcaption { font-family: var(--sans); font-size: 11px; color: #6b6455; margin-top: 8px; text-align: center; }
+
+.photo-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 56px; }
+.photo-pillar h4 { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--gold-bright); margin-bottom: 10px; }
+.photo-pillar p { font-family: var(--sans); font-size: 13.5px; line-height: 1.8; color: var(--ivory-dim); }
+
+/* ---------- Philanthropy ---------- */
+
+.partner-row { display: flex; justify-content: center; align-items: center; gap: 56px; flex-wrap: wrap; margin-top: 30px; }
+.partner-card { background: var(--green-950); border: 1px solid var(--line); padding: 34px 40px; min-width: 220px; text-align: center; }
+.partner-card img { max-height: 90px; max-width: 180px; margin: 0 auto; }
+.partner-card .partner-name { font-family: var(--sans); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ivory-dim); margin-top: 14px; }
+.partner-card .partner-flag { font-family: var(--sans); font-size: 10px; color: var(--gold-bright); margin-top: 6px; }
+
+/* ---------- Gaps ---------- */
+
+.gap-list { display: grid; gap: 1px; background: var(--line); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 10px; }
+.gap-item { background: var(--ivory); padding: 26px 32px; display: grid; grid-template-columns: 160px 1fr; gap: 24px; }
+.gap-item .tag { font-family: var(--sans); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.gap-item p { margin: 0; font-family: var(--sans); font-size: 14px; color: #3c4438; line-height: 1.7; }
+
+/* ---------- Footer ---------- */
+
+.kit-footer { background: var(--green-950); color: var(--ivory-dim); text-align: center; padding: 48px 32px; font-family: var(--sans); font-size: 11.5px; letter-spacing: 0.06em; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 900px) {
+  .logo-grid, .rules-grid, .photo-pillars { grid-template-columns: 1fr; }
+  .swatches { grid-template-columns: repeat(2, 1fr); }
+  .photo-grid { grid-template-columns: repeat(2, 1fr); }
+  .gap-item { grid-template-columns: 1fr; gap: 8px; }
+  .partner-row { gap: 24px; }
+}
