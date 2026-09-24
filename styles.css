@@ -93,6 +93,18 @@ a { color: inherit; }
   text-underline-offset: 6px;
 }
 
+.btn--gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #ffffff;
+}
+
+.btn--gold:hover {
+  background: var(--gold-bright);
+  border-color: var(--gold-bright);
+  color: #ffffff;
+}
+
 /* ---------- Nav ---------- */
 
 .nav {
