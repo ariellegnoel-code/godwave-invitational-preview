@@ -12,8 +12,8 @@
   --ink: #14170f;
   --line: rgba(198, 163, 79, 0.35);
 
-  --serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
-  --display: "Fraunces", var(--serif);
+  --serif: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --display: "Inter", var(--serif);
   --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
 
   --max: 1180px;

@@ -1,5 +1,5 @@
 /* GodWave Invitational: landing page
-   Palette: forest green, ivory, muted gold. Serif display + engraved small-caps sans. */
+   Palette: forest green, ivory, muted gold. Inter throughout, italic for display, small caps sans for labels. */
 
 :root {
   --green-950: #0a1f14;
@@ -13,8 +13,8 @@
   --ink: #17190f;
   --line: rgba(198, 163, 79, 0.35);
 
-  --serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
-  --crest-serif: "Cinzel", var(--serif);
+  --serif: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --crest-serif: "Inter", var(--serif);
   --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
 
   --max: 1180px;
@@ -406,25 +406,37 @@ a { color: inherit; }
 }
 
 .philanthropy__logo {
-  font-family: var(--sans);
-  font-size: 13px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--green-800);
-  padding: 26px 30px;
-  border: 1px solid rgba(20, 55, 38, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   min-width: 200px;
 }
 
-.philanthropy__logo span {
-  display: block;
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 20px;
-  letter-spacing: 0;
-  text-transform: none;
-  margin-bottom: 4px;
-  color: var(--green-900);
+.philanthropy__chip {
+  background: var(--green-950);
+  border: 1px solid var(--line);
+  padding: 26px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 96px;
+}
+
+.philanthropy__chip img {
+  max-height: 52px;
+  max-width: 160px;
+  width: auto;
+}
+
+.philanthropy__logo p {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green-800);
+  text-align: center;
 }
 
 .philanthropy__note {
