@@ -290,8 +290,7 @@ a { color: inherit; }
 /* ---------- Ethos ---------- */
 
 .ethos {
-  background: var(--ivory) url('assets/texture-god-golf-giving.png') no-repeat center center;
-  background-size: 420px auto;
+  background: var(--ivory);
   padding: 140px 32px;
   text-align: center;
 }
