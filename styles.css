@@ -387,7 +387,16 @@ a { color: inherit; }
 }
 
 .room__frame {
+  position: relative;
   overflow: hidden;
+}
+
+.room__frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8,28,17,0.25), rgba(8,28,17,0.45));
+  pointer-events: none;
 }
 
 .room__grid img {
