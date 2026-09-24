@@ -15,7 +15,7 @@
 
   --serif: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
   --crest-serif: "Cinzel", var(--serif);
-  --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
 
   --max: 1180px;
 }
