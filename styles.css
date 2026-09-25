@@ -299,9 +299,13 @@ a { color: inherit; }
 }
 
 .section-title {
-  width: clamp(300px, 44vw, 620px);
+  width: clamp(220px, 32vw, 420px);
   height: auto;
   margin: 0 auto 16px;
+}
+
+.family__inner .section-title {
+  width: clamp(300px, 44vw, 620px);
 }
 
 .ethos__body {
