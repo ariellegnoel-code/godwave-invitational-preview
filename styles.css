@@ -299,7 +299,7 @@ a { color: inherit; }
 }
 
 .section-title {
-  width: clamp(220px, 32vw, 420px);
+  width: clamp(300px, 44vw, 620px);
   height: auto;
   margin: 0 auto 16px;
 }
