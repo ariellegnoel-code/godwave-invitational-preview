@@ -298,6 +298,12 @@ a { color: inherit; }
   margin: 0 auto 32px;
 }
 
+.section-title {
+  width: clamp(220px, 32vw, 420px);
+  height: auto;
+  margin: 0 auto 16px;
+}
+
 .ethos__body {
   max-width: 620px;
   margin: 0 auto;
@@ -396,13 +402,24 @@ a { color: inherit; }
 
 .room__grid img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 100%;
-  height: 132%;
+  height: 118%;
   object-fit: cover;
-  object-position: top;
-  will-change: transform;
+  object-position: center 22%;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: center;
+  animation: roomPan 24s ease-in-out infinite alternate;
+}
+
+@keyframes roomPan {
+  from { transform: translate(-50%, -50%) scale(1); }
+  to { transform: translate(-50%, -50%) scale(1.1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .room__grid img { animation: none; }
 }
 
 /* ---------- Family & Community ---------- */
