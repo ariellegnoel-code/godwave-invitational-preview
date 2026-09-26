@@ -304,10 +304,6 @@ a { color: inherit; }
   margin: 0 auto 16px;
 }
 
-.family__inner .section-title {
-  width: clamp(300px, 44vw, 620px);
-}
-
 .ethos__body {
   max-width: 620px;
   margin: 0 auto;
