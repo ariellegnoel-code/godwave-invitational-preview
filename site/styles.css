@@ -187,7 +187,7 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('assets/hero-bg.jpg?v=20260925b');
+  background-image: url('assets/hero-bg.jpg?v=20260925c');
   background-size: cover;
   background-position: center 30%;
   animation: heroZoom 26s ease-in-out infinite alternate;
@@ -451,49 +451,6 @@ a { color: inherit; }
   .gallery__arrow { display: none; }
 }
 
-/* ---------- The Room (photo pair) ---------- */
-
-.room__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.room__frame {
-  position: relative;
-  overflow: hidden;
-  height: 62vh;
-  min-height: 360px;
-  background: var(--green-950);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.room__frame::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(8,28,17,0.14), rgba(8,28,17,0.28));
-  pointer-events: none;
-  z-index: 1;
-}
-
-.room__grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  transition: transform 0.8s ease;
-}
-
-.room__frame:hover img {
-  transform: scale(1.02);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .room__grid img { transition: none; }
-}
-
 /* ---------- Family & Community ---------- */
 
 .family {
@@ -746,7 +703,5 @@ a { color: inherit; }
   .philanthropy__logo { min-width: 200px; }
   .philanthropy__chip { min-height: 200px; min-width: 200px; padding: 36px; }
   .philanthropy__chip img { max-height: 120px; max-width: 240px; }
-  .room__grid { grid-template-columns: 1fr; }
-  .room__frame { height: 44vh; min-height: 260px; }
   .family { padding: 110px 24px; }
 }
