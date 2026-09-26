@@ -25,3 +25,17 @@ const io = new IntersectionObserver(
   { threshold: 0.15 }
 );
 revealItems.forEach((item) => io.observe(item));
+
+// Gallery carousel arrows
+const galleryTrack = document.getElementById('galleryTrack');
+const galleryPrev = document.getElementById('galleryPrev');
+const galleryNext = document.getElementById('galleryNext');
+if (galleryTrack && galleryPrev && galleryNext) {
+  const scrollAmount = () => galleryTrack.clientWidth * 0.9;
+  galleryPrev.addEventListener('click', () => {
+    galleryTrack.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+  });
+  galleryNext.addEventListener('click', () => {
+    galleryTrack.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+  });
+}
