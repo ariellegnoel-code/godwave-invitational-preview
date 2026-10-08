@@ -187,7 +187,7 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url('assets/hero-bg.jpg?v=20260925f');
+  background-image: url('assets/hero-bg.jpg?v=20261008a');
   background-size: cover;
   background-position: center 30%;
   animation: heroZoom 26s ease-in-out infinite alternate;
@@ -706,3 +706,34 @@ a { color: inherit; }
   .philanthropy__chip img[alt="Kids Alive International"] { max-width: 100px; max-height: 90px; }
   .family { padding: 110px 24px; }
 }
+
+/* MOCKUP ONLY: tab 5 additions */
+.cup{background:#0f2a1f;color:#f4ecd8;padding:110px 24px;text-align:center}
+.cup__inner{max-width:760px;margin:0 auto}
+.cup .eyebrow{color:#c9a24d}
+.cup__title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2.4rem,6vw,4rem);line-height:1.1;margin:18px 0 22px;color:#f4ecd8;font-weight:500}
+.cup .rule{margin:0 auto 26px}
+.cup__lede{font-family:Georgia,serif;font-size:1.35rem;color:#c9a24d;margin-bottom:22px}
+.cup__body{font-size:1.05rem;line-height:1.8;color:#e9e1cc;margin:0 0 16px}
+.partner{padding:100px 24px;background:#f4ecd8;text-align:center}
+.partner__title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,5vw,3rem);margin:14px 0 18px;color:#14301f;font-weight:500}
+.partner__intro{max-width:680px;margin:0 auto 40px;line-height:1.7;color:#2b3a30}
+.partner__note{max-width:640px;margin:34px auto 24px;font-style:italic;color:#2b3a30}
+.partner .experience__grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.partner .experience__grid{grid-template-columns:repeat(3,1fr);background:transparent;gap:0}
+.partner .experience__card{background:#fbf6e6;color:#14301f}
+.partner .experience__card h3{color:#14301f}
+.partner .experience__card p{color:#3a4a3f}
+@media(max-width:860px){.partner .experience__grid{grid-template-columns:1fr}}
+
+/* MOCKUP: Cup section flipped to cream, like God. Golf. Giving. */
+.cup{position:relative;overflow:hidden;background:#f3f1e9;color:var(--green-900)}
+.cup__inner{position:relative}
+.cup .eyebrow{color:#9a7a2e}
+.cup__title{color:var(--green-900)}
+.cup__lede{color:#9a7a2e}
+.cup__body{color:#4a5245}
+
+.cup__titleimg{display:block;width:min(620px,86%);height:auto;margin:20px auto 26px}
+
+.cup__lede{font-style:normal}
