@@ -854,16 +854,14 @@ a { color: inherit; }
   margin: 10px 0 0;
 }
 
-/* The section takes the gramophone image's own deep green so the image sits in it edge to edge. */
-.cup { background: #0d1611; color: var(--ivory); }
+/* Arielle's transparent gramophone lockup sits on the site's deepest green. */
+.cup { background: var(--green-950); color: var(--ivory); }
 .cup .eyebrow { color: var(--gold); }
 .cup__gramophone {
   display: block;
   width: min(680px, 100%);
   height: auto;
   margin: 8px auto 22px;
-  -webkit-mask-image: radial-gradient(ellipse 62% 70% at 50% 50%, #000 48%, transparent 100%);
-          mask-image: radial-gradient(ellipse 62% 70% at 50% 50%, #000 48%, transparent 100%);
 }
 .cup__presented {
   max-width: 560px;
