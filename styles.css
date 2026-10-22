@@ -154,7 +154,7 @@ a { color: inherit; }
   text-transform: uppercase;
 }
 
-.nav__links a { text-decoration: none; opacity: 0.88; }
+.nav__links a { text-decoration: none; opacity: 0.88; white-space: nowrap; }
 .nav__links a:hover { opacity: 1; color: var(--gold-bright); }
 
 .nav__toggle {
@@ -681,7 +681,8 @@ a { color: inherit; }
   .experience__card { border-bottom: 1px solid var(--line); }
 }
 
-@media (max-width: 720px) {
+/* Six nav items need the menu button below 1120px (2026-10-22, Tournament link added). */
+@media (max-width: 1120px) {
   .nav__links { display: none; }
   .nav__toggle { display: flex; }
 
@@ -696,6 +697,9 @@ a { color: inherit; }
     gap: 40px;
     font-size: 14px;
   }
+}
+
+@media (max-width: 720px) {
 
   .hero { padding-top: 120px; }
   .ethos, .experience, .philanthropy, .invite { padding-left: 24px; padding-right: 24px; }
@@ -737,3 +741,99 @@ a { color: inherit; }
 .cup__titleimg{display:block;width:min(620px,86%);height:auto;margin:20px auto 26px}
 
 .cup__lede{font-style:normal}
+
+/* ---------- Deck language (2026-10-22): Vision, Tournament, Guest List ---------- */
+
+.ethos__body + .ethos__body { margin-top: 18px; }
+.ethos__body strong { color: var(--green-800); font-weight: 600; }
+.ethos__tagline {
+  margin: 30px auto 0;
+  font-style: italic;
+  font-size: 19px;
+  color: #9a7a2e;
+}
+.ethos__pull {
+  max-width: 620px;
+  margin: 36px auto;
+  padding: 28px 32px;
+  background: var(--green-900);
+  color: var(--ivory);
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: clamp(18px, 2.2vw, 22px);
+  line-height: 1.45;
+  border-bottom: 4px solid #ffe82d;
+}
+
+.tournament {
+  background: var(--green-900);
+  color: var(--ivory);
+  padding: 120px 32px;
+}
+.tournament__head {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 64px;
+}
+.tournament__lede, .guests__lede {
+  font-size: 19px;
+  color: var(--ivory-dim);
+  margin: 8px 0 0;
+}
+
+.guests {
+  background: var(--ivory);
+  color: var(--ink);
+  padding: 120px 32px;
+}
+.guests__lede { color: #3c4438; }
+
+.numbered {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 64px;
+  row-gap: 44px;
+}
+.numbered li {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+.numbered__n {
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: rgba(244, 239, 228, 0.55);
+  font-variant-numeric: tabular-nums;
+}
+.numbered h3 {
+  font-family: var(--sans);
+  font-size: 19px;
+  font-weight: 600;
+  color: #ffe82d;
+  margin: 2px 0 6px;
+}
+.numbered p {
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ivory-dim);
+  margin: 0;
+}
+.numbered--light .numbered__n { color: rgba(20, 55, 38, 0.35); }
+.numbered--light h3 { color: var(--green-800); }
+.numbered--light p { color: #4a5245; }
+
+@media (max-width: 720px) {
+  .numbered { grid-template-columns: minmax(0, 1fr); row-gap: 32px; }
+  .numbered li { grid-template-columns: 56px minmax(0, 1fr); }
+  .numbered__n { font-size: 36px; }
+  .tournament, .guests { padding: 90px 24px; }
+  .ethos__pull { padding: 22px 20px; }
+}
