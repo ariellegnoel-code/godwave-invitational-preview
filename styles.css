@@ -889,3 +889,17 @@ a { color: inherit; }
 /* Guest List on green (2026-10-22): Arielle's title is white, so the section takes the brand's photo-overlay green. */
 .guests { background: #123228; color: var(--ivory); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .guests__lede { color: var(--ivory-dim); }
+
+/* Smaller numbered lists (2026-10-22, Arielle: "lessen overall size"). Applies to The Experience and The Guest List so they stay matched. */
+.tournament, .guests { padding-top: 96px; padding-bottom: 96px; }
+.tournament__head { margin-bottom: 44px; }
+.numbered { max-width: 860px; column-gap: 48px; }
+.numbered li { grid-template-columns: 48px minmax(0, 1fr); gap: 14px; padding: 20px 0; }
+.numbered__n { font-size: 26px; }
+.numbered h3 { font-size: 18px; margin-bottom: 4px; }
+.numbered p { font-size: 13px; line-height: 1.65; }
+@media (max-width: 720px) {
+  .tournament, .guests { padding-top: 72px; padding-bottom: 72px; }
+  .numbered li { grid-template-columns: 40px minmax(0, 1fr); padding: 18px 0; }
+  .numbered__n { font-size: 22px; }
+}
