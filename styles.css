@@ -885,3 +885,7 @@ a { color: inherit; }
 /* Champagne Cup lockup (2026-10-22): Arielle's gold trophy over her gold script title. */
 .cup__trophy { display: block; width: clamp(110px, 14vw, 170px); height: auto; margin: 10px auto 18px; }
 .cup__script { display: block; width: min(560px, 88%); height: auto; margin: 0 auto 26px; }
+
+/* Guest List on green (2026-10-22): Arielle's title is white, so the section takes the brand's photo-overlay green. */
+.guests { background: #123228; color: var(--ivory); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.guests__lede { color: var(--ivory-dim); }
