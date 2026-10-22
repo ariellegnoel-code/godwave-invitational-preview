@@ -850,8 +850,9 @@ a { color: inherit; }
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
+  font-weight: 700;
   color: var(--gold-bright);
-  margin: 10px 0 0;
+  margin: 10px 0 28px;
 }
 
 /* Arielle's transparent gramophone lockup sits on the site's deepest green. */
