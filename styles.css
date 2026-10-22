@@ -681,8 +681,9 @@ a { color: inherit; }
   .experience__card { border-bottom: 1px solid var(--line); }
 }
 
-/* Six nav items need the menu button below 1120px (2026-10-22, Tournament link added). */
-@media (max-width: 1120px) {
+/* Crest only in the nav (2026-10-22): links tighten a little below 1240px, menu button below 1060px. */
+@media (max-width: 1240px) { .nav__links { gap: 24px; } }
+@media (max-width: 1060px) {
   .nav__links { display: none; }
   .nav__toggle { display: flex; }
 
