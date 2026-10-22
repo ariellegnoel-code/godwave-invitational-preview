@@ -880,3 +880,4 @@ a { color: inherit; }
 .cup__lede { color: var(--gold-bright); }
 .cup__body { color: var(--ivory-dim); }
 .guests { border-bottom: 0; }
+.cup__gold { color: var(--gold-bright); font-weight: 700; }
