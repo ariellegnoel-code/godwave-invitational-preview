@@ -842,3 +842,41 @@ a { color: inherit; }
   .numbered__n { font-size: 28px; }
   .tournament, .guests { padding: 90px 24px; }
 }
+
+/* ---------- Marcus's notes (2026-10-22): Champagne Cup image, Tommy Brown credit, curator ---------- */
+
+.hero__curator {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin: 10px 0 0;
+}
+
+/* The section takes the gramophone image's own deep green so the image sits in it edge to edge. */
+.cup { background: #0d1611; color: var(--ivory); }
+.cup .eyebrow { color: var(--gold); }
+.cup__gramophone {
+  display: block;
+  width: min(680px, 100%);
+  height: auto;
+  margin: 8px auto 22px;
+  -webkit-mask-image: radial-gradient(ellipse 62% 70% at 50% 50%, #000 48%, transparent 100%);
+          mask-image: radial-gradient(ellipse 62% 70% at 50% 50%, #000 48%, transparent 100%);
+}
+.cup__presented {
+  max-width: 560px;
+  margin: 0 auto;
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ivory-dim);
+}
+.cup__presented strong { color: var(--gold-bright); font-weight: 600; }
+.cup .rule { background: var(--gold); }
+.cup__lede { color: var(--gold-bright); }
+.cup__body { color: var(--ivory-dim); }
+.guests { border-bottom: 0; }
