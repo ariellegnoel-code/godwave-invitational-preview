@@ -879,3 +879,7 @@ a { color: inherit; }
 .cup__body { color: var(--ivory-dim); }
 .guests { border-bottom: 0; }
 .cup__gold { color: var(--gold-bright); font-weight: 700; }
+
+/* Champagne Cup lockup (2026-10-22): Arielle's gold trophy over her gold script title. */
+.cup__trophy { display: block; width: clamp(110px, 14vw, 170px); height: auto; margin: 10px auto 18px; }
+.cup__script { display: block; width: min(560px, 88%); height: auto; margin: 0 auto 26px; }
