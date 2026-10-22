@@ -852,7 +852,7 @@ a { color: inherit; }
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--gold-bright);
+  color: #ffffff;
   margin: 10px 0 28px;
 }
 
