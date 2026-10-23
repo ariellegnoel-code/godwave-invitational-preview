@@ -904,13 +904,3 @@ a { color: inherit; }
   .numbered__n { font-size: 22px; }
 }
 
-/* Curator line in the Gathering tagline's type (2026-10-23): Inter italic, sentence case, white. */
-.hero__curator {
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 400;
-  font-size: clamp(16px, 1.6vw, 19px);
-  letter-spacing: 0;
-  text-transform: none;
-  color: #ffffff;
-}
