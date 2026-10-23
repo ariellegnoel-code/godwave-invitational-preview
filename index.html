@@ -11,7 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20261022n" />
+<link rel="preload" as="image" href="assets/hero-bg.webp?v=20261023a" fetchpriority="high" />
+<link rel="stylesheet" href="styles.css?v=20261023a" />
 </head>
 <body>
 
@@ -28,7 +29,7 @@
 
 <header class="nav" id="siteNav">
   <a href="#top" class="nav__mark">
-    <img src="assets/crest-small.png?v=20261008a" alt="GodWave crest" />
+    <img decoding="async" src="assets/crest-small.webp?v=20261023a" alt="GodWave crest" />
   </a>
   <nav class="nav__links">
     <a href="#gathering">The Gathering</a>
@@ -47,9 +48,9 @@
   <div class="hero__bg"></div>
   <div class="hero__vignette"></div>
   <div class="hero__inner">
-    <img class="hero__crest" src="assets/crest-medium.png?v=20261008a" alt="GodWave crest" />
+    <img decoding="async" class="hero__crest" src="assets/crest-medium.webp?v=20261023a" alt="GodWave crest" />
     <p class="hero__label">GodWave Invitational</p>
-    <img class="hero__title" src="assets/by-invitation-only.png?v=20261008a" alt="By Invitation Only" />
+    <img decoding="async" class="hero__title" fetchpriority="high" src="assets/by-invitation-only.webp?v=20261023a" alt="By Invitation Only" />
     <p class="hero__location">Super Bowl Monday<br>February 15, 2027 &nbsp;&middot;&nbsp; Los Angeles, California</p>
     <p class="hero__curator">Cultural Curator &nbsp;&middot;&nbsp; Gentry Humphrey, Nike &amp; Jordan Brand Legend</p>
     <p class="hero__sub">An exclusive golf experience uniting leaders, athletes, entertainers, and cultural tastemakers through fellowship and philanthropy, creating lasting legacies and meaningful impact for children and families in need.</p>
@@ -64,7 +65,7 @@
 <section class="ethos reveal" id="gathering">
   <div class="wrap">
     <p class="eyebrow eyebrow--dark">THE GATHERING</p>
-    <img class="ethos__quote" src="assets/when-two-or-more.png?v=20261008a" alt="When two or more gather." />
+    <img loading="lazy" decoding="async" class="ethos__quote" src="assets/when-two-or-more.webp?v=20261023a" alt="When two or more gather." />
     <div class="rule"></div>
     <p class="ethos__body">The GodWave Invitational is a highly curated gathering of influential leaders who move with character and purpose across culture and industry.</p>
     <p class="ethos__body">This one-day experience brings together individuals shaping business, culture, sports, and community through deep conviction and a commitment to service.</p>
@@ -76,11 +77,11 @@
 
 <section class="gallery reveal">
   <div class="gallery__track" id="galleryTrack">
-    <div class="gallery__slide"><img src="assets/gallery-1-mens-cream.jpg?v=20261008a" alt="Guests in cream and forest green GodWave apparel" /></div>
-    <div class="gallery__slide"><img src="assets/gallery-4-flag.jpg?v=20261008a" alt="The GodWave flag on the course" /></div>
-    <div class="gallery__slide"><img src="assets/gallery-2-cart-crew.jpg?v=20261008a" alt="Guests gathered beside the golf cart" /></div>
-    <div class="gallery__slide"><img src="assets/gallery-5-fivesome.jpg?v=20261008a" alt="Guests walking the fairway together" /></div>
-    <div class="gallery__slide"><img src="assets/gallery-3-womens-checker.jpg?v=20261008a" alt="Guests seated on the checkered course bench" /></div>
+    <div class="gallery__slide"><img loading="lazy" decoding="async" src="assets/gallery-1-mens-cream.webp?v=20261023a" alt="Guests in cream and forest green GodWave apparel" /></div>
+    <div class="gallery__slide"><img loading="lazy" decoding="async" src="assets/gallery-4-flag.webp?v=20261023a" alt="The GodWave flag on the course" /></div>
+    <div class="gallery__slide"><img loading="lazy" decoding="async" src="assets/gallery-2-cart-crew.webp?v=20261023a" alt="Guests gathered beside the golf cart" /></div>
+    <div class="gallery__slide"><img loading="lazy" decoding="async" src="assets/gallery-5-fivesome.webp?v=20261023a" alt="Guests walking the fairway together" /></div>
+    <div class="gallery__slide"><img loading="lazy" decoding="async" src="assets/gallery-3-womens-checker.webp?v=20261023a" alt="Guests seated on the checkered course bench" /></div>
   </div>
   <button class="gallery__arrow gallery__arrow--prev" id="galleryPrev" aria-label="Previous photo">&#8249;</button>
   <button class="gallery__arrow gallery__arrow--next" id="galleryNext" aria-label="Next photo">&#8250;</button>
@@ -90,7 +91,7 @@
   <div class="wrap">
     <div class="tournament__head reveal">
       <p class="eyebrow">THE TOURNAMENT</p>
-      <img class="section-title" src="assets/title-the-experience.png?v=20261008a" alt="The Experience" />
+      <img loading="lazy" decoding="async" class="section-title" src="assets/title-the-experience.webp?v=20261023a" alt="The Experience" />
       <p class="tournament__lede">Hosted at Mulholland Hills Country Club, the tournament will feature a full day of golf and friendly competition.</p>
     </div>
     <ol class="numbered reveal">
@@ -108,7 +109,7 @@
   <div class="wrap">
     <div class="tournament__head reveal">
       <p class="eyebrow">BY INVITATION ONLY</p>
-      <img class="section-title" src="assets/title-the-guest-list.png?v=20261022m" alt="The Guest List" />
+      <img loading="lazy" decoding="async" class="section-title" src="assets/title-the-guest-list.webp?v=20261023a" alt="The Guest List" />
       <p class="guests__lede">World-class leaders shaping culture. This is a curated community of people rooted in purpose, conviction, and service.</p>
     </div>
     <ol class="numbered reveal">
@@ -128,8 +129,8 @@
   <svg class="hero__field" viewBox="0 0 220 90" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;opacity:.35;"><rect width="100%" height="100%" fill="url(#waveField)" /></svg>
   <div class="cup__inner">
     <p class="eyebrow">Super Bowl Monday</p>
-    <img class="cup__gramophone" src="assets/champagne-cup-gramophone.png?v=20261022q" alt="The Champagne Cup" />
-    <p class="cup__presented">Presented by <strong>Tommy Brown</strong>, ASCAP Award winner and Grammy Award-winning producer, of Champagne Therapy Music Group.</p>
+    <img loading="lazy" decoding="async" class="cup__gramophone" src="assets/champagne-cup-gramophone.webp?v=20261023a" alt="The Champagne Cup" />
+    <p class="cup__presented">Presented by <strong>Tommy Brown</strong>, ASCAP Award winner, Grammy Award-winning producer and Founder of Champagne Therapy Music Group.</p>
     <div class="rule"></div>
     <p class="cup__lede">A toast to the ones building for a higher purpose.</p>
     <p class="cup__body">The iconic <strong class="cup__gold">Champagne Cup</strong> closes Super Bowl Monday with a toast to driven leaders, creators, artists, and visionaries who build because they were called to.</p>
@@ -140,21 +141,21 @@
   <div class="wrap">
     <div class="philanthropy__head">
       <p class="eyebrow">PHILANTHROPY</p>
-      <img class="section-title" src="assets/title-giving-back.png?v=20261008a" alt="Giving Back" />
+      <img loading="lazy" decoding="async" class="section-title" src="assets/title-giving-back.webp?v=20261023a" alt="Giving Back" />
     </div>
     <p class="philanthropy__body">A percentage of proceeds from each GodWave Invitational supports selected 501(c)(3) organizations making a meaningful difference. Within 30 days following the event, we publish the donation amounts and recipient organizations.</p>
     <!-- Swap each block below for Arielle's actual partner logo images when supplied. -->
     <div class="philanthropy__logos">
       <a class="philanthropy__logo" href="https://kidsalive.org" target="_blank" rel="noopener">
-        <div class="philanthropy__chip"><img src="assets/logo-kidsalive.svg?v=20261008a" alt="Kids Alive International" /></div>
+        <div class="philanthropy__chip"><img loading="lazy" decoding="async" src="assets/logo-kidsalive.svg?v=20261008a" alt="Kids Alive International" /></div>
         <p>Kids Alive International</p>
       </a>
       <a class="philanthropy__logo" href="https://www.facebook.com/MADAgapeMission/" target="_blank" rel="noopener">
-        <div class="philanthropy__chip"><img src="assets/logo-risinglight.png?v=20261008a" alt="Rising Light of Madagascar" /></div>
+        <div class="philanthropy__chip"><img loading="lazy" decoding="async" src="assets/logo-risinglight.webp?v=20261023a" alt="Rising Light of Madagascar" /></div>
         <p>Rising Light of Madagascar</p>
       </a>
       <a class="philanthropy__logo" href="https://content.onecollective.org/" target="_blank" rel="noopener">
-        <div class="philanthropy__chip"><img src="assets/logo-onecollective.png?v=20261008a" alt="One Collective" /></div>
+        <div class="philanthropy__chip"><img loading="lazy" decoding="async" src="assets/logo-onecollective.png?v=20261008a" alt="One Collective" /></div>
         <p>One Collective</p>
       </a>
     </div>
@@ -162,10 +163,10 @@
   </div>
 </section>
 
-<section class="family reveal" style="background-image:url('assets/family.jpg?v=20261008a')">
+<section class="family reveal" style="background-image:url('assets/family.webp?v=20261023a')">
   <div class="family__scrim"></div>
   <div class="family__inner">
-    <img class="section-title" src="assets/title-family-community.png?v=20261008a" alt="Family & Community" />
+    <img loading="lazy" decoding="async" class="section-title" src="assets/title-family-community.webp?v=20261023a" alt="Family & Community" />
     <h2>An elite, culture-shifting gathering that feels like family.</h2>
     <p>The GodWave Invitational is intentionally family-centered. Guests are encouraged to bring spouses and family members to share in an experience that celebrates leadership and community, creating a space where families belong.</p>
   </div>
@@ -174,7 +175,7 @@
 <section class="invite reveal" id="invite">
   <svg class="hero__field" viewBox="0 0 220 90" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;opacity:.35;"><rect width="100%" height="100%" fill="url(#waveField)" /></svg>
   <div class="invite__inner">
-    <img class="invite__title" src="assets/title-good-golf-giving.png?v=20261022r" alt="Good. Golf. Giving." />
+    <img loading="lazy" decoding="async" class="invite__title" src="assets/title-good-golf-giving.webp?v=20261023a" alt="Good. Golf. Giving." />
     <p>Every request is reviewed personally. If you feel called to gather with us on Super Bowl Monday, tell us a little about yourself below.</p>
     <div class="invite__ctas">
       <a href="https://forms.gle/NQnTTzMsNQ9WZR6WA" target="_blank" rel="noopener" class="btn btn--dark">Request an Invitation</a>
@@ -185,7 +186,7 @@
 
 <footer class="footer">
   <div class="footer__inner">
-    <img class="footer__mark" src="assets/crest-small.png?v=20261008a" alt="GodWave crest" />
+    <img loading="lazy" decoding="async" class="footer__mark" src="assets/crest-small.webp?v=20261023a" alt="GodWave crest" />
     <div class="footer__links">
       <a href="https://instagram.com/godwavegolf" target="_blank" rel="noopener">Instagram</a>
       <a href="#philanthropy">Philanthropy</a>
