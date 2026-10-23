@@ -741,7 +741,7 @@ a { color: inherit; }
 
 .cup__titleimg{display:block;width:min(620px,86%);height:auto;margin:20px auto 26px}
 
-.cup__lede{font-style:normal}
+.cup__lede{font-style:italic}
 
 /* ---------- Deck language (2026-10-22): Vision, Tournament, Guest List ----------
    Built from the site's own tokens: gold hairlines, Inter, ivory/forest, antique gold on light. */
