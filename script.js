@@ -39,3 +39,18 @@ if (galleryTrack && galleryPrev && galleryNext) {
     galleryTrack.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
   });
 }
+
+// Background photos below the fold load only as they come near the screen.
+const lazyBgs = document.querySelectorAll('[data-bg]');
+const bgIo = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.backgroundImage = `url('${entry.target.dataset.bg}')`;
+        bgIo.unobserve(entry.target);
+      }
+    });
+  },
+  { rootMargin: '600px 0px' }
+);
+lazyBgs.forEach((el) => bgIo.observe(el));
