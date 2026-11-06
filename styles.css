@@ -859,11 +859,17 @@ a { color: inherit; }
 /* Arielle's transparent gramophone lockup sits on the site's deepest green. */
 .cup { background: var(--green-950); color: var(--ivory); }
 .cup .eyebrow { color: var(--gold); }
-.cup__gramophone {
+.cup__trophy {
   display: block;
-  width: min(680px, 100%);
+  width: min(170px, 34%);
   height: auto;
-  margin: 8px auto 22px;
+  margin: 8px auto 26px;
+}
+.cup__title {
+  display: block;
+  width: min(620px, 92%);
+  height: auto;
+  margin: 0 auto 26px;
 }
 .cup__presented {
   max-width: 560px;
