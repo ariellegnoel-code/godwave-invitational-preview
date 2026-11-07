@@ -910,3 +910,23 @@ a { color: inherit; }
   .numbered__n { font-size: 22px; }
 }
 
+
+/* ---------- Partners & Sponsors marquee (2026-11-06) ---------- */
+.partners{background:var(--green-900);border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--ivory);padding:96px 0 104px;overflow:hidden;position:relative}
+.partners__head{text-align:center;padding:0 32px}
+
+.partners__title{font-family:var(--sans);font-size:clamp(15px,1.5vw,18px);letter-spacing:.36em;text-transform:uppercase;color:var(--gold);font-weight:500;padding-left:.36em}
+.partners .rule{margin:22px auto 56px}
+.partners__marquee{position:relative;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%)}
+.partners__track{display:flex;width:max-content;animation:partners-scroll 48s linear infinite}
+.partners__marquee:hover .partners__track{animation-play-state:paused}
+.partners__set{display:flex;align-items:center;gap:96px;margin:0;padding:0 48px;list-style:none}
+.partners__set li{flex:none;display:flex;align-items:center;height:80px}
+.partners__set img{width:auto;max-width:none;opacity:.88;transition:opacity .3s}
+.partners__set img:hover{opacity:1}
+.partners__set img.is-mono{filter:brightness(0) invert(1)}
+@keyframes partners-scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.partners__track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.partners__set[aria-hidden]{display:none}.partners__set{flex-wrap:wrap;justify-content:center;row-gap:40px}}
+@media (max-width:720px){.partners{padding:72px 0 80px}.partners__set{gap:56px;padding:0 28px}.partners__set img{transform:scale(.8)}.partners__track{animation-duration:36s}.partners .rule{margin-bottom:40px}}
+
+.cup__presented + .rule{margin-top:28px}
