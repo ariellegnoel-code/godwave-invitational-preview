@@ -142,3 +142,20 @@ document.querySelectorAll('.partners__set img').forEach((img) => {
   if (img.complete && img.naturalWidth === 0) retry();
   else if (img.decode) img.decode().catch(() => {});
 });
+
+// Soundtrack: the Spotify player loads only as it nears the screen, so it
+// never slows the opening. The link inside stays if scripts are off.
+const soundtrack = document.getElementById('soundtrack');
+if (soundtrack) {
+  const stIo = new IntersectionObserver(([e]) => {
+    if (!e.isIntersecting) return;
+    stIo.disconnect();
+    const f = document.createElement('iframe');
+    f.src = soundtrack.dataset.embed;
+    f.title = 'Lovely Day by Bill Withers on Spotify';
+    f.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+    f.loading = 'eager';
+    soundtrack.replaceChildren(f);
+  }, { rootMargin: '400px 0px' });
+  stIo.observe(soundtrack);
+}
