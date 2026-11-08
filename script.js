@@ -128,3 +128,17 @@ const bgIo = new IntersectionObserver(
   { rootMargin: '600px 0px' }
 );
 lazyBgs.forEach((el) => bgIo.observe(el));
+
+// Partner logos: decode every logo before it slides into view, and heal a bad
+// cached copy (a "not found" kept from before a logo existed) by fetching it
+// once more around the browser cache.
+document.querySelectorAll('.partners__set img').forEach((img) => {
+  const retry = () => {
+    if (img.dataset.retried) return;
+    img.dataset.retried = '1';
+    img.src = img.getAttribute('src') + '&r=' + Date.now();
+  };
+  img.addEventListener('error', retry);
+  if (img.complete && img.naturalWidth === 0) retry();
+  else if (img.decode) img.decode().catch(() => {});
+});
