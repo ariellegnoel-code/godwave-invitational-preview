@@ -922,7 +922,7 @@ a { color: inherit; }
 .partners__track{display:flex;width:max-content;animation:partners-scroll 52s linear infinite;will-change:transform;-webkit-backface-visibility:hidden}
 .partners__marquee:hover .partners__track{animation-play-state:paused}
 .partners__set{display:flex;align-items:center;gap:112px;margin:0;padding:0 48px;list-style:none}
-.partners__set li{flex:none;display:flex;align-items:center;height:120px}
+.partners__set li{flex:none;display:flex;align-items:center;height:140px}
 .partners__set img{width:auto;max-width:none;opacity:.88;transition:opacity .3s}
 .partners__set img:hover{opacity:1}
 .partners__set img.is-mono{filter:brightness(0) invert(1)}
