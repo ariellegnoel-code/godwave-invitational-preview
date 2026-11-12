@@ -159,3 +159,34 @@ if (soundtrack) {
   }, { rootMargin: '400px 0px' });
   stIo.observe(soundtrack);
 }
+
+// Partner logos: the arrows nudge the scrolling row a few logos either way,
+// then it keeps scrolling from there.
+(() => {
+  const track = document.querySelector('.partners__track');
+  const prev = document.getElementById('partnersPrev');
+  const next = document.getElementById('partnersNext');
+  if (!track || !prev || !next || !track.getAnimations) return;
+  let busy = false;
+  const nudge = (dir) => {
+    const anim = track.getAnimations()[0];
+    if (!anim || busy) return;
+    const dur = anim.effect.getComputedTiming().duration;
+    const loopPx = track.scrollWidth / 2;
+    const step = Math.min(window.innerWidth * 0.6, 520);
+    const shift = dir * (step / loopPx) * dur;
+    const from = anim.currentTime || 0;
+    const t0 = performance.now(), len = 450;
+    busy = true;
+    const tick = (now) => {
+      const k = Math.min(1, (now - t0) / len), e = 1 - Math.pow(1 - k, 3);
+      let t = from + shift * e;
+      if (t < 0) t += dur;
+      anim.currentTime = t;
+      if (k < 1) requestAnimationFrame(tick); else busy = false;
+    };
+    requestAnimationFrame(tick);
+  };
+  prev.addEventListener('click', () => nudge(-1));
+  next.addEventListener('click', () => nudge(1));
+})();

@@ -941,3 +941,11 @@ a { color: inherit; }
 .soundtrack__fallback{color:var(--ivory);font-size:14px;letter-spacing:.08em;text-decoration:none}
 .soundtrack__fallback:hover{color:var(--gold-bright)}
 @media (max-width:720px){.soundtrack{margin-top:44px}}
+
+.partners__stage{position:relative}
+.partners__arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:48px;height:48px;border-radius:50%;background:rgba(8,28,17,.82);border:1.5px solid rgba(244,238,224,.7);color:var(--ivory);font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 0 3px;transition:background .2s,border-color .2s}
+.partners__arrow:hover,.partners__arrow:focus-visible{background:var(--green-800);border-color:var(--gold);outline:none}
+.partners__arrow--prev{left:20px}
+.partners__arrow--next{right:20px}
+@media (max-width:720px){.partners__arrow{width:40px;height:40px;font-size:20px}.partners__arrow--prev{left:10px}.partners__arrow--next{right:10px}}
+@media (prefers-reduced-motion:reduce){.partners__arrow{display:none}}
